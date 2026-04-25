@@ -1,0 +1,336 @@
+/* general body styling */
+body {
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f0;
+}
+
+/* homepage background only */
+body.home-page {
+    background-image: url("images/blurry.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+body.home-page::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: -1;
+}
+
+/* contact page background only */
+body.contact-page {
+    background-image: url("images/contact.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+body.contact-page::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: -1;
+}
+
+/* skip link */
+.skip-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(180, 180, 174);
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: 1px solid black;
+    z-index: 9999;
+}
+
+.skip-link:focus {
+    left: 10px;
+}
+
+/* header */
+header {
+    background-color: #600a5e;
+    padding: 20px;
+    text-align: center;
+    background-image: url("images/choco1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #f1eff0;
+}
+
+header p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #f1eff0;
+}
+
+/* navigation */
+nav {
+    background-color: #cfb9c6;
+    padding: 10px;
+    border-top: 2px solid #c0498e;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: underline;
+    color: #c0498e;
+    font-size: 1rem;
+}
+/* active page in nav */
+nav a.active {
+    background-color: #c46494;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #c0498e;
+}
+
+nav a:hover {
+    color: #e9dada;
+    font-weight: bold;
+}
+
+/* main content */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* sections */
+section {
+    margin-bottom: 30px;
+}
+
+/* headings */
+h2 {
+    color: #58034f;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+/* thumbnail images */
+.thumbnail {
+    width: 200px;
+    height: auto;
+    border: 2px solid #130abe;
+}
+
+/* figure */
+figure {
+    margin: 10px 0;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 33%);
+}
+
+/* tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+
+th {
+    background-color: #df0f9d;
+    padding: 8px;
+    border: 1px solid #000;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #000;
+}
+
+/* footer */
+footer {
+    background-color: #df0f9d;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-top: 2px solid #000;
+}
+
+/* daily specials */
+#specials {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#specials img {
+    width: 200px;
+    height: auto;
+    margin: 10px 0;
+    border: 2px solid #cdcce1;
+}
+
+/* form styling */
+fieldset {
+    border: 2px solid #df0f9d;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+legend { /* which is the title of the fieldset */
+    font-weight: bold;
+    color: #58034f;
+    padding: 0 5px;
+}
+
+input[type="text"], textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 1rem;
+    font-family: Georgia, serif;
+}
+
+input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #333;
+}
+
+input[type="reset"] {
+    background-color: #df0f9d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* contact page reviews */
+#reviews {
+    background-color: rgb(237, 236, 236);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.review p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* location section */
+#location {
+    background-color: #d886c8;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #000;
+    margin-bottom: 20px;
+}
+
+#location h2 {
+    margin-top: 0;
+}
+
+/* contact section */
+#contact {
+    background-color: #fff8f0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#contact img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #df0f9d;
+    border-radius: 8px;
+}
+
+/* external links */
+#links a {
+    color: #2108c9;
+}
+
+/* responsive - tablet */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    .thumbnail {
+        width: 150px;
+    }
+}
+
+/* responsive - phone */
+@media (max-width: 480px) {
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .thumbnail {
+        width: 100%;
+    }
+
+    #fontsize {
+    background-color: #cfb9c6;
+    padding: 5px 10px;
+    text-align: right;
+}
+
+#fontsize button {
+    background-color: #600a5e;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+#fontsize button:hover {
+    background-color: #df0f9d;
+
+}
+}

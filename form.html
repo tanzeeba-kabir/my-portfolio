@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" /> <!-- handles special characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form – HaiFa's Bakery</title>
+    <link rel="stylesheet" href="style.css" />  <!-- bring stuffs from style.css and print.css-->
+    <link rel="stylesheet" href="print.css" media="print" />
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1>HaiFa's Bakery</h1>
+        <p>Fresh Cakes & Pastries</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="form.html" class="active">Form</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div id="fontsize">
+        <button onclick="increaseFontSize()">A+</button>
+        <button onclick="decreaseFontSize()">A-</button>
+        <button onclick="resetFontSize()">Reset</button>
+    </div>
+
+    <main id="main-content">
+
+        <section>
+            <h2>Cake Order Form</h2>
+            <p><a href="mailto:haifabakery@gmail.com">Send your cake order</a></p>
+            <p>If you would like to order a cake from HaiFa's Bakery, 
+            please fill in the form below.</p>
+
+            <form action="mailto:haifabakery@gmail.com" method="post">
+
+                <fieldset>
+                    <legend>Cake Datasheet</legend>
+
+                    <p>
+                        <label for="cakename">Cake Name:</label>
+                        <input type="text" id="cakename" name="cakename" size="30" maxlength="100" />
+                    </p>
+
+                    <!-- cake type radio buttons -->
+                    <p><strong>Cake Type:</strong></p>
+                    <p>
+                        <input type="radio" id="choco" name="caketype" value="chocolate" />
+                        <label for="choco">Chocolate Cake</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="straw" name="caketype" value="strawberry" />
+                        <label for="straw">Strawberry Cake</label>
+                    </p>
+
+                </fieldset>
+
+                
+                <fieldset> <!--group related form elements together -->
+                    <legend>Extra Details</legend>  <!-- message and newsletter -->
+
+                    <p>
+                        <label for="message">Message for the cake:</label><br />
+                        <textarea id="message" name="message" rows="4" cols="40"></textarea>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes" />
+                        <label for="newsletter">Subscribe to bakery newsletter</label>
+                    </p>
+
+                </fieldset>
+
+                <!-- submit and reset buttons -->
+                <p>
+                    <p>
+                    🎂 <input type="submit" value="Submit" /> 🎂
+                    <input type="reset" value="Reset" /> 🎂
+                
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>HaiFa's Bakery – Budapest, Hungary | <a href="contact.html">Contact Us</a></p>
+    </footer>
+
+</body>
+</html>

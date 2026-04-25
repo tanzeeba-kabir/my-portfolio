@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" /> <!-- handles special characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact – HaiFa's Bakery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="print.css" media="print" />
+    <script src="script.js"></script>
+</head>
+<body class="contact-page">
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1>HaiFa's Bakery</h1>
+        <p>Fresh Cakes & Pastries</p>
+    </header>
+
+    <nav>
+         <a href="index.html">Homepage</a>
+        <a href="form.html">Form</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div id="fontsize">
+        <button onclick="increaseFontSize()">A+</button>
+        <button onclick="decreaseFontSize()">A-</button>
+        <button onclick="resetFontSize()">Reset</button>
+    </div>
+
+    <main id="main-content">
+
+        <!-- customer reviews -->
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <p>⭐ "The chocolate cake is amazing and very fresh!" — Anna</p>
+                <p>⭐ "Best bakery in Budapest. I love the strawberry cake and pastry." — David</p>
+            </div>
+        </section>
+
+        <!-- location -->
+        <section id="location">
+            <h2>Our Location</h2>
+            <p>HaiFa's Bakery</p>
+            <p>Budapest, Pest, Hungary</p>
+        </section>
+
+        <!-- contact info -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:haifabakery@gmail.com">haifabakery@gmail.com</a></p>
+            <p>Phone: <a href="tel:+36201234567">+36 20 123 4567</a></p>
+            <figure>
+                <a href="images/bake.jpg">
+                    <img src="images/bake.jpg" alt="Inside of HaiFa's Bakery in Budapest" class="thumbnail" />
+                </a>
+                <figcaption>Bakery Photo</figcaption>
+            </figure>
+        </section>
+
+        <!-- external links for grade - criterion 7 -->
+        <section id="links">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="https://www.budapest.com" target="_blank">Budapest.com</a></li>
+                <li><a href="https://www.tripadvisor.com" target="_blank">Find us on TripAdvisor</a></li>
+                <li><a href="https://www.pexels.com" target="_blank">Our photo source</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- author info in footer -->
+    <footer>
+        <h2>Author</h2>
+        <address>
+            <p>Tanzeeba Kabir</p>
+            <p>Budapest, Hungary</p>
+        </address>
+    </footer>
+
+</body>
+</html>

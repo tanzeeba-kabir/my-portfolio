@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" /> <!-- handles special characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- works on mobile too -->
+    <title>Homepage – HaiFa's Bakery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="print.css" media="print" />
+    <script src="script.js"></script>
+</head>
+<body class="home-page">
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1>HaiFa's Bakery</h1>
+        <p>Fresh Cakes & Pastries</p>
+    </header>
+
+    <nav>
+        <a href="index.html" class="active">Homepage</a>
+        <a href="form.html">Form</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div id="fontsize"> <!-- font size change with javascript-->
+        <button onclick="increaseFontSize()">A+</button> 
+        <button onclick="decreaseFontSize()">A-</button>
+        <button onclick="resetFontSize()">Reset</button>
+    </div>
+
+    <main id="main-content">
+
+        <section id="intro">    <!-- introduction section -->
+            <h2>Introduction</h2>
+            <p>🌸 Haifa's Bakery is a place where fresh cakes, pastries, and desserts
+            are baked every day. Our goal is to provide delicious handmade treats 
+            for every occasion such as birthdays, weddings, and celebrations. 
+            We use high quality ingredients to make sure every product is fresh, 
+            tasty, and beautifully decorated. 🌸</p>
+
+            <p><strong>Please note</strong> that the selection of our cakes is based 
+            on our bakery's most popular products and chosen by our trusty customers.</p>
+
+            <ol>
+                <li>Chocolate Cake</li>
+                <li>Strawberry Cake</li>
+            </ol>
+        </section>
+
+        <!-- cake details section -->
+        <section id="cakes">
+            <h2>More Details about Cakes</h2>
+            <!-- chocolate cake -->
+            <article>
+                <h3>Chocolate Cake</h3>
+                                                              <!-- chocolate cake details table -->
+                <details>
+                    <summary>Chocolate Cake Details</summary>
+                    <table>
+                        <caption>Chocolate Cake Details</caption>
+                        <tr>
+                            <th colspan="2">Chocolate Cake</th>  <!-- two coloumns-->
+                        </tr>
+                        <tr>
+                            <td>1. Price</td>
+                            <td>20€</td>
+                        </tr>
+                        <tr>
+                            <td>2. Main Ingredients</td>
+                            <td>Cocoa, flour, eggs, butter, sugar</td>
+                        </tr>
+                        <tr>
+                            <td>3. Customer Rating</td>
+                            <td>4.8/5</td>
+                        </tr>
+                    </table>
+                </details>
+
+                <p><strong>Description</strong></p>
+                <p>Our chocolate cake is made with rich cocoa sponge layers and 
+                covered with smooth chocolate frosting. It is perfect for birthdays, 
+                celebrations, or anyone who loves chocolate desserts.</p>
+
+                <figure>
+                    <a href="images/choco2.jpg">
+                        <img src="images/choco1.jpg" alt="A chocolate layer cake with smooth frosting" class="thumbnail" />
+                    </a>
+                    <figcaption>Photo of the Chocolate Cake</figcaption>
+                </figure>
+            </article>
+
+            <!-- strawberry cake -->
+            <article>
+                <h3>Strawberry Cake</h3>
+                                            <!-- strawberry cake details table -->
+                <details>
+                    <summary>Strawberry Cake Details</summary>
+                    <table>
+                        <caption>Strawberry Cake Details</caption>
+                        <tr>
+                            <th colspan="2">Strawberry Cake</th>
+                        </tr>
+                        <tr>
+                            <td>1. Price</td>
+                            <td>15€</td>
+                        </tr>
+                        <tr>
+                            <td>2. Main Ingredients</td>
+                            <td>Strawberries, cream, biscuit, butter</td>
+                        </tr>
+                        <tr>
+                            <td>3. Customer Rating</td>
+                            <td>4.6/5</td>
+                        </tr>
+                    </table>
+                </details>
+
+                <p><strong>Description</strong></p>
+                <p>Strawberry cheese has a creamy filling and a crunchy biscuit base, 
+                topped with fresh strawberries. It is a refreshing dessert and one 
+                of our customers favorite choices.</p>
+
+                <figure>
+                    <a href="images/straw2.jpg">
+                         <img src="images/straw1.jpg" alt="Strawberry cheesecake topped with fresh strawberries" class="thumbnail" />
+                    </a>
+                    <figcaption>Photo of the Strawberry Cake</figcaption>
+                </figure>
+            </article>
+
+        </section>
+
+        <!-- recipe section -->
+
+
+        <!-- recipe image section -->
+         
+        <section id="recipe">
+            <h2>Chocolate Cake Recipe</h2>
+          <section>
+
+    
+    <p>Below is a short example of how our chocolate cake is prepared.</p>
+    <p>Ingredients</p>
+    <ul>
+        <li>Flour - 2 cups</li>
+        <li>Sugar - 1 cup</li>
+        <li>Cocoa Powder - 1/2 cup</li>
+        <li>Eggs - 2 pcs</li>
+        <li>Milk - 1 cup</li>
+        <li>Butter - 1/2 cup</li>
+    </ul>
+
+    <p><strong>Steps:</strong></p>
+    <ol>
+        <li>Mix flour, cocoa powder, and sugar.</li>
+        <li>Add eggs, milk, and melted butter.</li>
+        <li>Bake at 180°C for 30 minutes.</li>
+    </ol>
+</section>
+<section>
+            <figure>
+                <img src="images/bakery.jpg" alt="Chocolate cake fresh out of the oven" class="thumbnail" />
+                <figcaption>Our chocolate cake fresh out of the oven</figcaption>
+            </figure>
+        </section>
+          
+
+        <!-- baking video section -->
+        <section id="video">
+            <h2>Baking Video</h2>
+            <p>My favourite baking tutorial for chocolate cake:</p>
+            <figure>
+                <video controls width="560" poster="images/choco1.jpg">
+                    <source src="videos/baking.mp4" type="video/mp4" />
+                    <p>Your browser does not support video.
+                    <a href="videos/baking.mp4">Download the video here.</a></p>
+                </video>
+                <figcaption>Embedded baking tutorial video.</figcaption>
+            </figure>
+
+               <details>
+                <summary>Full text description of the video</summary>
+                <p>This video is a baking tutorial showing how to make a chocolate cake 
+                    Throughout the video the person shows how to frost the white crumbed 
+                    cake with layer of chocolate liquid with help of frosting knife smoothly.
+                </p>
+            </details>
+        </section>
+
+        <!-- daily specials section -->
+        <section id="specials">
+            <h2>Daily Specials 🌸🎂🍰</h2>
+            <p>Every day we prepare fresh pastries and desserts. 
+            Our popular daily specials include:</p>
+            <ol>
+                <li>Butter Croissants</li>
+                <li>Cinnamon Rolls</li>
+                <li>Blueberry Muffins</li>
+                <li>Chocolate Chip Cookies</li>
+            </ol>
+            <figure>
+                <img src="images/straw2.jpg" alt="Display of fresh daily pastries at HaiFa's Bakery" />
+                <figcaption>Bakery Photo</figcaption>
+            </figure>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>HaiFa's Bakery – Budapest, Hungary | <a href="contact.html">Contact Us</a></p>
+    </footer>
+
+</body>
+</html>

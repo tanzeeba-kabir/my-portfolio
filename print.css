@@ -1,0 +1,60 @@
+/* print stylesheet - hides things that dont need to print */
+@media print {
+
+    /* hide navigation, header image, footer, video, buttons */
+    nav {
+        display: none;
+    }
+
+    header {
+        background-image: none;
+        background-color: #fff;
+        color: #000;
+    }
+
+    header h1 {
+        color: #000;
+    }
+
+    header p {
+        color: #000;
+    }
+
+    footer {
+        display: none;
+    }
+
+    video {
+        display: none;
+    }
+
+    /* hide skip link */
+    .skip-link {
+        display: none;
+    }
+
+    /* hide buttons on form */
+    input[type="submit"],
+    input[type="reset"] {
+        display: none;
+    }
+
+    /* make text black for printing */
+    body {
+        background: none;
+        background-image: none;
+        color: #000;
+        font-size: 12pt;
+    }
+
+    /* make images smaller for printing */
+    img {
+        max-width: 200px;
+    }
+
+    /* save ink - remove backgrounds */
+    section, aside {
+        background: none;
+    }
+
+}
